@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Alexander - The Unusual Engineer</title>
+    <title>Alexander - The Unusual Blog</title>
     <meta charset="utf-8">
     <meta name="description" content="Personal Portfolio">
     <meta name="author" content="Alexander Sopov">
@@ -190,164 +190,65 @@ module.exports = function () {
     </script>
   </head>
   <body>
-    <section id="introduction">
-      <div class="page left-aligned">
-        <div class="title">
-          <h1>Alexander Sopov.</h1>
-        </div>
-        <h3>Not your usual engineer</h3>
-        <div class="intro">
-          <div class="left-p">
-            <p>Boxer, Comedian, Writer. I spend a lot of time thinking deeply on the engineering problems of our time, but unlike many in my profession, I enjoy resolving conflicts and communicate with masses of people.</p>
-          </div>
-          <div class="right-p">
-            <p>This helps me in my interaction with my clients because we easily understand each other and I'm able to condense their needs into clear solutions that they can comprehend.</p>
-          </div>
-        </div>
-        <h2>
-        </h2>
+    <!--HEADER STICKY, MENU AND LOGO
+    -->
+    <header class="stickyHD">
+      <div id="logo" onclick="script.nav.goTo(this)">
+        <h3>Alexander.</h3>
       </div>
-    </section>
-    <div>
-      <svg class="decor" style="position:relative;top:10px;" height="32px" width="100%" fill="#1a1b20" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <path d="M100 0 L100 100 L0 100 L0 75" stroke-width="0"></path>
-      </svg>
-    </div>
-    <section class="black" id="Xp">
-      <div class="page left-aligned">
-        <div class="title">
-          <h1>Xp.</h1>
-        </div>
-        <div class="content-wrap slider" id="xp-slider">
-          <div class="active module slide-cont" id="Web Development">
-            <div class="md-8">
-              <h2>Web Development</h2>
-              <p>I have fullstack capabilities and believe in the flexibility to allow the scope of the project to dictate the technology - and not the other way around.</p>
+    </header>
+    <!--
+    div#navbar(onclick="script.nav.toggle()")
+      ul
+        - for (var i=1; i<activePage.sections.length;i++)
+          - var title = activePage.sections[i].title, url = "#"+activePage.title;
+          li(onclick="script.nav.goTo(this)", data-value=title, id=title+"-nav")
+            p!= title+"."
+    HEADER-IMG, SUPPOSED TO CHANGE BUT FUCK IT, KEEP IT STATIC ATM
+    ***
+    -->
+    <section id="header-padding"></section>
+    <section>
+      <div class="page">
+        <div class="content-wrap">
+          <div class="md-4 right-float">
+            <div id="best-of">
               <ul>
-                <li>Ultra-fast, Static Websites</li>
-                <li>Interactive Web Applications</li>
-                <li>Single Page Applications</li>
+                <li><a href="">hej</a></li>
+                <li><a href="">hej</a></li>
+                <li><a href="">hej</a></li>
+                <li><a href="">hej</a></li>
               </ul>
             </div>
-            <div class="md-4">
-              <h1> </h1>
-              <div class="md-6"><img class="icon" src="img/html5-wo.png" alt="HTML 5"></div>
-              <div class="md-6"><img class="icon" src="img/css-wo.png" alt="CSS 3"></div>
-              <div class="md-6"><img class="icon" src="img/nodejs-wo.png" alt="Node JS"></div>
-              <div class="md-6"><img class="icon" src="img/java-wo.png" alt="Java"></div>
-            </div>
-          </div>
-          <div class="module slide-cont" id="Game Development">
-            <div class="md-8">
-              <h2>Game Development</h2>
-              <p>I create Virtual Reality Experiences that brings forth the imagination and vision of my clients into life.</p>
+            <div id="latest-commented">
               <ul>
-                <li>Virtual Reality</li>
-                <li>Augmented Reality</li>
-                <li>Gameplay Scripting</li>
+                <li><a href="">hej</a></li>
+                <li><a href="">hej</a></li>
+                <li><a href="">hej</a></li>
+                <li><a href="">hej</a></li>
               </ul>
             </div>
-            <div class="md-4">
-              <h1> </h1>
-              <div class="md-6"><img class="icon" src="img/htc-vive.jpg" alt="HTC Vive"></div>
-              <div class="md-6"><img class="icon" src="img/unrealengine-wo.png" alt="Unreal Engine Logo"></div>
-              <div class="md-6"><img class="icon" src="img/unity-wo.jpg" alt="Unity Engine Logo"></div>
-              <div class="md-6"><img class="icon" src="img/c++-wo.png" alt="C++ Logo"></div>
-            </div>
-          </div>
-          <div class="module slide-cont" id="Artifical Intelligence">
-            <div class="md-8">
-              <h2>Artifical Intelligence</h2>
-              <p>I've begun to dig deep into the technology of contemporary AI and I've spent many years thinking deeply about the future of computer intelligence. I am currently available for consultation on the ethics and consequences of intelligent systems and their application in the world.</p>
+            <div id="archive">
               <ul>
-                <li>Deep Learning</li>
-                <li>Man Vs Machine</li>
-                <li>Ethics &amp; Consequences</li>
+                <li><a href="">hej</a></li>
+                <li><a href="">hej</a></li>
+                <li><a href="">hej</a></li>
+                <li><a href="">hej</a></li>
               </ul>
             </div>
-            <div class="md-4">
-              <h1> </h1>
-              <div class="md-6"><img class="icon" src="img/python-wo.png" alt="Python"></div>
-              <div class="md-6"><img class="icon" src="img/daniel-dennet-wo.jpg" alt="Daniel Dennet"></div>
-              <div class="md-6"><img class="icon" src="img/samharris-wo.jpg" alt="Sam Harris"></div>
-              <div class="md-6"><img class="icon" src="img/coursera-wo.jpg" alt="Coursera Courses on the topic"></div>
-            </div>
           </div>
-          <div class="slide-dots white-slider">
-            <div class="btn-container">
-              <div class="dots-container">
-                <div class="dot active" onclick="script.slider.goTo(0, &quot;xp-slider&quot;);"></div>
-                <div class="dot" onclick="script.slider.goTo(1, &quot;xp-slider&quot;);"></div>
-                <div class="dot" onclick="script.slider.goTo(2, &quot;xp-slider&quot;);"></div>
+          <div class="md-8 right-float">
+            <div class="blog-post">
+              <div class="blog-post-head">
+                <h1>Första inlägget</h1>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <svg class="decor" style="position:relative;top:10px;" height="32px" width="100%" fill="white" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <path d="M100 0 L100 100 L0 100 L0 75" stroke-width="0"></path>
-        </svg>
-      </div>
-    </section>
-    <section class="white" id="Clients">
-      <div class="page left-aligned">
-        <div class="title">
-          <h1>Clients.</h1>
-        </div>
-        <div class="content-wrap slider" id="clients">
-          <div class="active module slide-cont float-right">
-            <div class="md-4">
-              <h2> </h2><img class="client-logo" src="img/qamcom.svg">
-            </div>
-            <div class="md-8">
-              <h2><a class="no-decor" href="http://qamcom.se">Qamcom Research &amp; Technology</a></h2>
-              <h3><a class="no-decor" href="http://qamcom.se">Signal Processing Experts</a></h3>
-            </div>
-            <p>Qamcom is a world-class expert in signal processing who work in applications ranging from Communication Technology to Autonomous Drive.</p>
-            <p>Qamcom employees are PhD's or industry veterans and require high precision and quality from their consultants.</p>
-          </div>
-          <div class="module slide-cont float-right">
-            <div class="md-4">
-              <h2> </h2><img class="client-logo" src="img/bobby-wo.png">
-            </div>
-            <div class="md-8">
-              <h2><a class="no-decor" href="http://bobby.se">Bobby Studio</a></h2>
-              <h3><a class="no-decor" href="http://bobby.se">Digital Content Artists</a></h3>
-            </div>
-            <p>These guys are artists. They make the web, and the brands that populate it, beautiful and cool by helping them tell their unique stories in a way that captivates the audience.</p>
-            <p>Bobby thrives by being unique. They practice what they preach and the results they achieve are astonishing!</p>
-          </div>
-          <div class="module slide-cont float-right">
-            <div class="md-4">
-              <h2> </h2><img class="client-logo" src="img/isolerteknik.png">
-            </div>
-            <div class="md-8">
-              <h2><a class="no-decor" href="http://isolerteknik.se">Isolerteknik AB</a></h2>
-              <h3><a class="no-decor" href="http://isolerteknik.se">Web Development</a></h3>
-            </div>
-            <p>Isolerteknik is a quality ensurance company that monitors the health of various types of infrastructure.</p>
-            <p>Our collaboration began when their website needed to be responsive to different screen sizes.</p>
-          </div>
-          <div class="module slide-cont float-right">
-            <div class="md-4">
-              <h2> </h2><img class="client-logo">
-            </div>
-            <div class="md-8">
-              <h2><a class="no-decor">TeddyBear Studio</a></h2>
-              <h3><a class="no-decor">Content Management System</a></h3>
-            </div>
-            <p>Teddybear is working on a CMS for the middle guy. A CMS that pre-compiles websites into static files that gets served to the reader in an instant.</p>
-            <p>The search-algorithms at Google love that and so, too, does the readers.</p>
-          </div>
-          <div class="slide-dots">
-            <div class="btn-container">
-              <div class="dots-container">
-                <div class="dot active" onclick="script.slider.goTo(0, &quot;clients&quot;);"></div>
-                <div class="dot" onclick="script.slider.goTo(1, &quot;clients&quot;);"></div>
-                <div class="dot" onclick="script.slider.goTo(2, &quot;clients&quot;);"></div>
-                <div class="dot" onclick="script.slider.goTo(3, &quot;clients&quot;);"></div>
+              <div class="blog-image"><img src="img/headerImg-2-mini.jpg"></div>
+              <div class="text">
+                <p><strong>Ingress till inlägget är nog rätt overkill men vi testar och ser.</strong></p>
+                <p>Därefter kommer vanliga inlägg, det vet du bror. vad mer kan jag säga liksom</p>
+                <p>Forutom att du är en test(ikel)!</p>
               </div>
+              <div class="blog-post-foot"></div>
             </div>
           </div>
         </div>
